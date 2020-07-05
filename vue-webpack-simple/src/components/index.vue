@@ -4,6 +4,8 @@
     <button @click="toBase">vue base</button>
     <br />
     <button @click="toDouble">vue 双向绑定; 获取dom节点</button>
+    <br />
+    <button @click="toEvent">event事件</button>
   </div>
 </template>
 
@@ -17,6 +19,10 @@ export default {
     toDouble() {
       console.log("to double");
       this.$router.push("/doubleBind");
+    },
+    toEvent(){
+      console.log("to event");
+      this.$router.push("/event");
     }
   }
 };
