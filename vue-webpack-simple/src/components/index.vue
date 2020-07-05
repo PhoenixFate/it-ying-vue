@@ -6,6 +6,8 @@
     <button @click="toDouble">vue 双向绑定; 获取dom节点</button>
     <br />
     <button @click="toEvent">event事件</button>
+    <button @click="toDoList">to do list</button>
+    <br>
   </div>
 </template>
 
@@ -20,13 +22,15 @@ export default {
       console.log("to double");
       this.$router.push("/doubleBind");
     },
-    toEvent(){
+    toEvent() {
       console.log("to event");
       this.$router.push("/event");
+    },
+    toDoList() {
+      this.$router.push("/toDoList");
     }
   }
 };
 </script>
-
 <style>
 </style>
